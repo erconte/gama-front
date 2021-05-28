@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - JavaScript</title>
+    <!--Criando um componente em JS-->
+    <script>
+        //alert ("Sejam Bem vindos");
+        //declarando variáveis
+        /*var empresa="Weicom";
+        var mensagem="Sejam todos bem vindos a "
+        alert(mensagem + " " + empresa);*/
+
+        //criando um componente para manipular dados
+
+        //var nome = prompt("Olá, qual o seu nome?");
+        //alert("Seja bem vindo " + nome);
+        
+        // criando uma função em javascript
+        function mensagem () {
+            alert("Oieeee, como você está?")
+        }
+        function validar() {
+            var nome = contato.nome_cliente.value;
+            if(nome=="") {
+                alert("Obrigatório");
+                contato.nome_cliente.focus();
+                return false;
+            }
+            alert("Seja bem vindo " + nome)
+        }
+
+    </script>
+
+</head>
+<body>
+    <!--Inserir cabeçalho-->
+    <h3>Seja bem vindo</h3>
+    <!--Texto parágrafo-->
+    <p>Clique abaixo para ter uma interação</p>
+    <!--Botão de interação-->
+    <input type="button" onclick=mensagem() value="clica aqui">
+    <br>
+    <br>
+    <!--Inserio cabeçalho-->
+    <h3>Preencha</h3>
+    <!--Criei formulário-->
+    <form id="contato" method="POST">
+        Nome cliente: <input type="text" name="nome_cliente"><br>
+        <input type="submit" onclick="return validar()" value="Enviar">
+    </form>
+
+</body>
+</html>
